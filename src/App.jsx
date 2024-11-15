@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import bookCover from './assets/images/schimg.png'
 
-// Sample book data with external links
+// Book data
 const books = [
   {
     id: 1,
@@ -10,22 +10,6 @@ const books = [
     coverImage: bookCover,
     link: "https://online.fliphtml5.com/rkoqv/owqi/",
     month: "January 2024"
-  },
-  {
-    id: 2,
-    title: "Pride and Prejudice",
-    author: "Jane Austen",
-    coverImage: "https://m.media-amazon.com/images/I/71Q1tPupKjL._AC_UF1000,1000_QL80_.jpg",
-    link: "https://www.gutenberg.org/files/1342/1342-h/1342-h.htm",
-    month: "February 2024"
-  },
-  {
-    id: 3,
-    title: "Frankenstein",
-    author: "Mary Shelley",
-    coverImage: "https://m.media-amazon.com/images/I/71eXYyXGJ0L._AC_UF1000,1000_QL80_.jpg",
-    link: "https://www.gutenberg.org/files/84/84-h/84-h.htm",
-    month: "March 2024"
   }
 ]
 
@@ -35,19 +19,19 @@ function App() {
       <header className="bg-primary py-6">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl font-bold text-white">Monthly Book Club</h1>
-          <p className="text-gray-300 mt-2">Click on any book to start reading</p>
+          <p className="text-gray-300 mt-2">Click on the book to start reading</p>
         </div>
       </header>
 
       <main className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex justify-center">
           {books.map((book) => (
             <a
               key={book.id}
               href={book.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block group"
+              className="block group max-w-sm"
             >
               <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105">
                 <div className="relative">
