@@ -8,7 +8,7 @@ const books = [
     title: "e-venu shikshana vani",
     author: "BEO Belagavi city",
     coverImage: bookCover,
-    link: "https://online.fliphtml5.com/rkoqv/kyek/#p=1",
+    link: "https://online.fliphtml5.com/rkoqv/eusn/",
     month: <strong>October 2024</strong>
   },
   {
