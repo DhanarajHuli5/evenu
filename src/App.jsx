@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import bookCover from './assets/images/evenu.png'
+import bookCover2 from './assets/images/even2.png'
 
 // Book data
 const books = [
@@ -13,10 +14,10 @@ const books = [
   },
   {
     id: 2,
-    title: "",
-    author: "BEO Belagavi city",
-    coverImage: null,
-    link: "#",
+    title: "e-venu shikshana vani", // copied title
+    author: "BEO Belagavi city", // copied author
+    coverImage: bookCover2,
+    link: "https://online.fliphtml5.com/ixhkha/qtag/#p=1",
     month: <strong>November 2024</strong>,
     isPlaceholder: true
   }
@@ -61,7 +62,7 @@ function App() {
                     )}
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-300 flex items-center justify-center">
                       <span className="text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        {book.isPlaceholder ? 'Coming Soon' : 'Read Now →'}
+                        Read Now →
                       </span>
                     </div>
                   </div>
