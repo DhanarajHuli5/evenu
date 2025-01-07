@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import bookCover from './assets/images/evenu.png'
 import bookCover2 from './assets/images/even2.png'
+import bookCover3 from './assets/images/evenu3.png'
 
 // Book data
 const books = [
@@ -20,6 +21,14 @@ const books = [
     link: "https://online.fliphtml5.com/ixhkha/qtag/#p=1",
     month: <strong>November 2024</strong>,
     isPlaceholder: true
+  },
+  {
+    id: 3,
+    title: "e-venu shikshana vani",
+    author: "BEO Belagavi city",
+    coverImage: bookCover3,
+    link: "https://online.fliphtml5.com/ixhkha/tini/",
+    month: <strong>December 2024</strong>
   }
 ]
 
@@ -33,7 +42,7 @@ function App() {
         </div>
       </header>
 
-      <main className="flex-1 w-full">
+      <main className="flex-1 w-full flex flex-col justify-center">
         <div className="w-full h-full px-6 py-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {books.map((book) => (
